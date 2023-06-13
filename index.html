@@ -55,6 +55,7 @@
               zonecode: data.zonecode,
             };
             window.postMessageToiOS(postData);
+            window.flutter_inappwebview.callHandler('onSelectAddress', data);
           },
           width: "100%",
           height: "100%",
