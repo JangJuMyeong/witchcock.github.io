@@ -54,9 +54,7 @@
               jibunAddress: jibunAddress,
               zonecode: data.zonecode,
             };
-            // alert(data.roadAddress);
-            // window.postMessageToiOS(postData);
-            window.flutter_inappwebview.callHandler('onSelectAddress', data);
+            window.postMessageToiOS(postData);
           },
           width: "100%",
           height: "100%",
